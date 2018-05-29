@@ -19,12 +19,10 @@ ini_set('display_errors', 1 );
 	</style>
 </head>
 <body><?php
-$arq = file("../dados5sa.csv");
+$arq = file("../dados5s.csv");
 foreach ($arq as $temp_valor) { // c = coluna
       list( $c1 ) = explode(",", $temp_valor);
-	  echo "<div class='altura'></div>";
-      echo "<p>" . $c1 . "</p>";
-	  echo "<br class='break'>";
+      echo $c1 . "<br>";
 }
 
 ?>
