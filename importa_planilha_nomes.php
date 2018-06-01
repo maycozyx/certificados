@@ -19,7 +19,7 @@ ini_set('display_errors', 1 );
 	</style>
 </head>
 <body><?php
-$arq = file("../dados5s.csv");
+$arq = file("../dados5sc37.csv");
 foreach ($arq as $temp_valor) { // c = coluna
       list( $c1 ) = explode(",", $temp_valor);
       echo $c1 . "<br>";
